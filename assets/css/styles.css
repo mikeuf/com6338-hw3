@@ -15,16 +15,17 @@ a {
 }
 
 a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-font-family: 'Bowlby One', cursive;
+  font-family: 'Bowlby One', cursive;
+  letter-spacing: 0.1rem;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 0;
 }
 
@@ -32,16 +33,18 @@ h2 {
   font-size: 2rem;
   color: #a0638a;
   padding-bottom: 1rem;
-
 }
 
+h3 {
+  color: #a0638a;
+}
 header {
   margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 2% 5% 2% 5%;
-color: #fafafa;
+  padding: 3% 5% 3% 5%;
+  color: #fafafa;
   background-color: #a0638a;
 }
 
@@ -53,12 +56,17 @@ main {
 footer {
   margin: auto;
   padding: 2% 5% 2% 5%;
-color: #fafafa;
+  color: #fafafa;
   background-color: #a0638a;
 }
 
 #hamburger {
   font-size: 3rem;
+}
+
+#logo {
+  padding-left: 2rem;
+padding-right: 2rem;
 }
 
 nav ul {
@@ -69,8 +77,8 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 1.5rem;
-  margin: 1rem;
+  font-size: 1.25rem;
+  margin: 0.75rem;
 }
 
 nav ul li a {
@@ -98,4 +106,27 @@ section {
   max-width: 310px;
   overflow: hidden;
 }
+
+/***** MEDIA QUERIES *****/
+@media (max-width: 1000px) {
+#hamburger {
+display: inline;
+}
+
+nav ul li {
+display: none;
+}
+
+}
+
+@media (min-width: 1001px) {
+#hamburger {
+display: none;
+}
+
+nav ul li {
+display: block;
+}
+}
+
 
