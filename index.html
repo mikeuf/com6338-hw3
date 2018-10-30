@@ -13,132 +13,144 @@
     <!--[if lt IE 9]>
       <script src="js/html5shiv-printshiv.min.js"></script>
     <![endif]-->
+    <script>
+      function navBtnToggle() {
+        var i = document.getElementById('mobile');
+        if (i.style.display != 'block') {
+          i.style.display = 'block';
+        } else {
+          i.style.display = 'none';
+        }
+      }
+    </script>
 
   </head>
 
   <body>
-      <header>
-        <p id="hamburger">&#9776;</p>
-        <h1 id="logo">Pink Floyd</h1>
-        <nav id="mobile">
+    <header>
+      <a onClick="navBtnToggle();">
+      <p id="hamburger">&#9776;</p>
+      </a>
+      <h1 id="logo">Pink Floyd</h1>
+      <nav id="mobile">
+        <ul>
+          <li>
+            <a href="http://www.pinkfloyd.com/" target="_blank">Official Website</a>
+          </li>
+          <li>
+            <a href="http://www.pinkfloyd.com/design/band_photos.php" target="_blank">Photo Gallery</a>
+          </li>
+          <li>
+            <a href="https://rogerwaters.com/" target="_blank">Roger Waters</a>
+          </li>
+          <li>
+            <a href="http://www.davidgilmour.com/">David Gilmour</a>
+          </li>
           <ul>
-            <li>
-              <a href="http://www.pinkfloyd.com/" target="_blank">Official Website</a>
-            </li>
-            <li>
-              <a href="http://www.pinkfloyd.com/design/band_photos.php" target="_blank">Photo Gallery</a>
-            </li>
-            <li>
-              <a href="https://rogerwaters.com/" target="_blank">Roger Waters</a>
-            </li>
-            <li>
-              <a href="http://www.davidgilmour.com/">David Gilmour</a>
-            </li>
-            <ul>
-        </nav>
-        <nav id="desktop">
+      </nav>
+      <nav id="desktop">
+        <ul>
+          <li>
+            <a href="http://www.pinkfloyd.com/" target="_blank">Official Website</a>
+          </li>
+          <li>
+            <a href="http://www.pinkfloyd.com/design/band_photos.php" target="_blank">Photo Gallery</a>
+          </li>
+          <li>
+            <a href="https://rogerwaters.com/" target="_blank">Roger Waters</a>
+          </li>
+          <li>
+            <a href="http://www.davidgilmour.com/">David Gilmour</a>
+          </li>
           <ul>
-            <li>
-              <a href="http://www.pinkfloyd.com/" target="_blank">Official Website</a>
-            </li>
-            <li>
-              <a href="http://www.pinkfloyd.com/design/band_photos.php" target="_blank">Photo Gallery</a>
-            </li>
-            <li>
-              <a href="https://rogerwaters.com/" target="_blank">Roger Waters</a>
-            </li>
-            <li>
-              <a href="http://www.davidgilmour.com/">David Gilmour</a>
-            </li>
-            <ul>
-        </nav>
-      </header>
-      <main>
-        <article>
+      </nav>
+    </header>
+    <main>
+      <article>
 
-          <section>
+        <section>
           <h2>Us and Them</h2>
-            <p>Pink Floyd were an English rock band formed in London in 1965. They achieved international acclaim with their progressive and psychedelic music. Distinguished by their philosophical lyrics, sonic experimentation, extended compositions, and elaborate live shows, they are one of the most commercially successful and influential groups in popular music history.</p>
-          </section>
+          <p>Pink Floyd were an English rock band formed in London in 1965. They achieved international acclaim with their progressive and psychedelic music. Distinguished by their philosophical lyrics, sonic experimentation, extended compositions, and elaborate live shows, they are one of the most commercially successful and influential groups in popular music history.</p>
+        </section>
 
 
-          <section>
-            <p>Pink Floyd were founded by students Syd Barrett on guitar and lead vocals, Nick Mason on drums, Roger Waters on bass and vocals, and Richard Wright on keyboards and vocals. They gained popularity performing in London's underground music scene during the late 1960s, and under Barrett's leadership released two charting singles and a successful debut album, The Piper at the Gates of Dawn (1967). Guitarist and vocalist David Gilmour joined in December 1967; Barrett left in April 1968 due to deteriorating mental health. Waters became the band's primary lyricist and conceptual leader.</p>
-          </section>
+        <section>
+          <p>Pink Floyd were founded by students Syd Barrett on guitar and lead vocals, Nick Mason on drums, Roger Waters on bass and vocals, and Richard Wright on keyboards and vocals. They gained popularity performing in London's underground music scene during the late 1960s, and under Barrett's leadership released two charting singles and a successful debut album, The Piper at the Gates of Dawn (1967). Guitarist and vocalist David Gilmour joined in December 1967; Barrett left in April 1968 due to deteriorating mental health. Waters became the band's primary lyricist and conceptual leader.</p>
+        </section>
 
-          <section>
-            <figure class="figure-right">
-              <img src="assets/images/dark-side.png" alt="Dark Side of the Moon" title="Dark Side of the Moon">
-              <figcaption>Figure 1 - Dark Side of the Moon</figcaption>
-            </figure>
-          </section>
+        <section>
+          <figure class="figure-right">
+            <img src="assets/images/dark-side.png" alt="Dark Side of the Moon" title="Dark Side of the Moon">
+            <figcaption>Figure 1 - Dark Side of the Moon</figcaption>
+          </figure>
+        </section>
 
-          <section>
-            <figure class="figure-right">
-              <img src="assets/images/group-photo-late-1960s.jpg" alt="Pink Floyd in late 1960s" title="Pink Floyd in late 1960s">
-              <figcaption>Figure 2 - Pink Floyd in late 1960s</figcaption>
-            </figure>
-          </section>
+        <section>
+          <figure class="figure-right">
+            <img src="assets/images/group-photo-late-1960s.jpg" alt="Pink Floyd in late 1960s" title="Pink Floyd in late 1960s">
+            <figcaption>Figure 2 - Pink Floyd in late 1960s</figcaption>
+          </figure>
+        </section>
 
-          <section>
-            <p>In 1975, Pink Floyd bought a three-storey group of church halls at 35 Britannia Row in Islington and began converting the building into a recording studio and storage space. In 1976, they recorded their tenth album, Animals, in their newly finished 24-track studio. The concept of Animals originated with Waters, loosely based on George Orwell's political fable, Animal Farm. The album's lyrics described different classes of society as dogs, pigs, and sheep. Hipgnosis received credit for the packaging of Animals; however, Waters designed the final concept, choosing an image of the ageing Battersea Power Station, over which they superimposed an image of a pig.</p>
-          </section>
+        <section>
+          <p>In 1975, Pink Floyd bought a three-storey group of church halls at 35 Britannia Row in Islington and began converting the building into a recording studio and storage space. In 1976, they recorded their tenth album, Animals, in their newly finished 24-track studio. The concept of Animals originated with Waters, loosely based on George Orwell's political fable, Animal Farm. The album's lyrics described different classes of society as dogs, pigs, and sheep. Hipgnosis received credit for the packaging of Animals; however, Waters designed the final concept, choosing an image of the ageing Battersea Power Station, over which they superimposed an image of a pig.</p>
+        </section>
 
-          <section>
-            <figure class="figure-right">
-              <img src="assets/images/flying-pig.jpg" alt="Flying pig over Battersea" title="Flying pig over Battersea">
-              <figcaption>Figure 3 - Flying pig over Battersea</figcaption>
-            </figure>
-          </section>
-
-
-          <section>
-            <figure class="figure-right">
-              <img src="assets/images/astoria.jpg" alt="The Astoria" title="The Astoria">
-              <figcaption>Figure 4 - The Astoria</figcaption>
-            </figure>
-          </section>
-
-          <section>
-            <h2>Signs of Life</h2>
-            <p>In 1986, Gilmour began recruiting musicians for what would become Pink Floyd's first album without Waters, A Momentary Lapse of Reason. There were legal obstacles to Wright's re-admittance to the band, but after a meeting in Hampstead, Pink Floyd invited Wright to participate in the coming sessions. Gilmour later stated that Wright's presence "would make us stronger legally and musically", and Pink Floyd employed him as a musician with weekly earnings of $11,000. Recording sessions began on Gilmour's houseboat, the Astoria, moored along the River Thames. Gilmour worked with several songwriters, including Eric Stewart and Roger McGough, eventually choosing Anthony Moore to write the album's lyrics. Gilmour would later admit that the project was difficult without Waters' creative direction. 
-            </p>
-          </section>
+        <section>
+          <figure class="figure-right">
+            <img src="assets/images/flying-pig.jpg" alt="Flying pig over Battersea" title="Flying pig over Battersea">
+            <figcaption>Figure 3 - Flying pig over Battersea</figcaption>
+          </figure>
+        </section>
 
 
-          <section>
-            <figure class="figure-right">
-              <img src="assets/images/live-eight.jpg" alt="Final performance" title="Final performance">
-              <figcaption>Figure 6 - Final performance</figcaption>
-            </figure>
-          </section>
-          <section>
-            <figure class="figure-right">
-              <img src="assets/images/group-photo-1990s.jpg" alt="Pink Floyd in the 1990s" title="Pink Floyd in the 1990s">
-              <figcaption>Figure 5 - Pink Floyd in the 1990s</figcaption>
-            </figure>
-          </section>
+        <section>
+          <figure class="figure-right">
+            <img src="assets/images/astoria.jpg" alt="The Astoria" title="The Astoria">
+            <figcaption>Figure 4 - The Astoria</figcaption>
+          </figure>
+        </section>
 
-          
-          <section>
-            <p>For several years Pink Floyd had busied themselves with personal pursuits, such as filming and competing in the La Carrera Panamericana and recording a soundtrack for a film based on the event. In January 1993, they began working on a new album, returning to Britannia Row Studios, where for several days, Gilmour, Mason and Wright worked collaboratively, improvising material. After about two weeks, the band had enough ideas to begin creating songs. Ezrin returned to co-produce the album and production moved to the Astoria, where from February to May 1993, they worked on about 25 ideas.</p>
-          </section>
+        <section>
+          <h2>Signs of Life</h2>
+          <p>In 1986, Gilmour began recruiting musicians for what would become Pink Floyd's first album without Waters, A Momentary Lapse of Reason. There were legal obstacles to Wright's re-admittance to the band, but after a meeting in Hampstead, Pink Floyd invited Wright to participate in the coming sessions. Gilmour later stated that Wright's presence "would make us stronger legally and musically", and Pink Floyd employed him as a musician with weekly earnings of $11,000. Recording sessions began on Gilmour's houseboat, the Astoria, moored along the River Thames. Gilmour worked with several songwriters, including Eric Stewart and Roger McGough, eventually choosing Anthony Moore to write the album's lyrics. Gilmour would later admit that the project was difficult without Waters' creative direction. 
+          </p>
+        </section>
 
-          <section>
-            <h2>Eclipse</h2>
-            <p>On 2 July 2005, Waters, Gilmour, Mason and Wright performed together as Pink Floyd for the first time in more than 24 years, at the Live 8 concert in Hyde Park, London. The reunion was arranged by Live 8 organiser Bob Geldof; after Gilmour declined the offer, Geldof asked Mason, who contacted Waters. About two weeks later, Waters called Gilmour, their first conversation in two years, and the next day Gilmour agreed. In a statement to the press, the band stressed the unimportance of their problems in the context of the Live 8 event.</p>
-          </section>
 
-        </article>
-        <aside>
-          <h3>See you on the dark side of the moon!</h3>
-          <p>"When I say, 'I'll see you on the dark side of the moon'... what I mean [is] ... If you feel that you're the only one ... that you seem crazy [because] you think everything is crazy, you're not alone."</p>
-          <p>—Waters, quoted in Harris, 2005</p>
-        </aside>
-      </main> 
-      <footer>
+        <section>
+          <figure class="figure-right">
+            <img src="assets/images/live-eight.jpg" alt="Final performance" title="Final performance">
+            <figcaption>Figure 6 - Final performance</figcaption>
+          </figure>
+        </section>
+        <section>
+          <figure class="figure-right">
+            <img src="assets/images/group-photo-1990s.jpg" alt="Pink Floyd in the 1990s" title="Pink Floyd in the 1990s">
+            <figcaption>Figure 5 - Pink Floyd in the 1990s</figcaption>
+          </figure>
+        </section>
+
+
+        <section>
+          <p>For several years Pink Floyd had busied themselves with personal pursuits, such as filming and competing in the La Carrera Panamericana and recording a soundtrack for a film based on the event. In January 1993, they began working on a new album, returning to Britannia Row Studios, where for several days, Gilmour, Mason and Wright worked collaboratively, improvising material. After about two weeks, the band had enough ideas to begin creating songs. Ezrin returned to co-produce the album and production moved to the Astoria, where from February to May 1993, they worked on about 25 ideas.</p>
+        </section>
+
+        <section>
+          <h2>Eclipse</h2>
+          <p>On 2 July 2005, Waters, Gilmour, Mason and Wright performed together as Pink Floyd for the first time in more than 24 years, at the Live 8 concert in Hyde Park, London. The reunion was arranged by Live 8 organiser Bob Geldof; after Gilmour declined the offer, Geldof asked Mason, who contacted Waters. About two weeks later, Waters called Gilmour, their first conversation in two years, and the next day Gilmour agreed. In a statement to the press, the band stressed the unimportance of their problems in the context of the Live 8 event.</p>
+        </section>
+
+      </article>
+      <aside>
+        <h3>See you on the dark side of the moon!</h3>
+        <p>"When I say, 'I'll see you on the dark side of the moon'... what I mean [is] ... If you feel that you're the only one ... that you seem crazy [because] you think everything is crazy, you're not alone."</p>
+        <p>—Waters, quoted in Harris, 2005</p>
+      </aside>
+    </main> 
+    <footer>
       <p>&copy; 2018 Mike Black (except for the Pink Floyd stuff). All rights reserved.</p>
-      </footer>
+    </footer>
   </body>
 
 </html>

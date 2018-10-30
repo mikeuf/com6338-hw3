@@ -14,18 +14,14 @@ a {
   color: #fafafa;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Bowlby One', cursive;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 0;
 }
 
@@ -61,24 +57,22 @@ footer {
 }
 
 #hamburger {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  position: relative;
+  top: -6px; 
 }
 
 #logo {
-  padding-left: 2rem;
-padding-right: 2rem;
 }
 
 nav ul {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  min-width: 700px;
 }
 
 nav ul li {
   font-size: 1.25rem;
-  margin: 0.75rem;
+  margin-left: 2rem;
 }
 
 nav ul li a {
@@ -108,38 +102,56 @@ section {
 }
 
 #mobile {
-display: none;
+  display: none;
 }
 
 /***** MEDIA QUERIES *****/
-@media (max-width: 1000px) {
-#hamburger {
-display: inline;
+@media (max-width: 700px) {
+  #hamburger {
+    display: inline;
+  }
+
+  #desktop {
+    display: none;
+  }
+
 }
 
-#desktop {
+@media (min-width: 701px) {
+  #hamburger {
+    display: none;
+  }
+
+  #desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  h1, h2, h3, h4, h5, h6{
+    letter-spacing: 0rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #desktop ul {
+    position: relative;
+    top: 20px;
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
+  #mobile {
 display: none;
-}
+  }
 
-/*
-nav ul li {
+  #mobile ul li {
 display: none;
-}*/
-
-}
-
-@media (min-width: 1001px) {
-#hamburger {
-display: none;
-}
-
-#desktop {
-display: block;
-}
-
-nav ul li {
-display: block;
-}
+  };
 }
 
 
