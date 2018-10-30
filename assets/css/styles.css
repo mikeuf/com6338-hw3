@@ -8,6 +8,10 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+h1 {
+padding: 0;
+}
+
 header {
 display: flex;
 flex-direction: row;
