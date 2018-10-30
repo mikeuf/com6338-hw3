@@ -103,8 +103,12 @@ img {
 
 section {
   padding: 1rem;
-  max-width: 310px;
+  max-width: 320px;
   overflow: hidden;
+}
+
+#mobile {
+display: none;
 }
 
 /***** MEDIA QUERIES *****/
@@ -113,15 +117,24 @@ section {
 display: inline;
 }
 
-nav ul li {
+#desktop {
 display: none;
 }
+
+/*
+nav ul li {
+display: none;
+}*/
 
 }
 
 @media (min-width: 1001px) {
 #hamburger {
 display: none;
+}
+
+#desktop {
+display: block;
 }
 
 nav ul li {
